@@ -30,8 +30,7 @@
     }
     ?>
 
-    <div id="wrapper"> 
-    <h1> Test Git </h1> 
+    <div id="wrapper">  
     <video autoplay loop poster="<?php echo get_template_directory_uri(); ?>/img/polina.png" id="bgvid">
         <source src="<?php echo get_template_directory_uri(); ?>/img/animation.mp4" alt="backup festival weimar" type="video/mp4">
       </video>
