@@ -1,0 +1,119 @@
+/*! responsive-nav.js 1.0.32 by @viljamis */
+@media (max-width: 640px) {
+body {border-top: none;}
+#menu {
+  display: block;
+  color: #fff;
+  height: 44px;
+  border-top: 10px solid hsla(0,50%,50%,1);
+  margin: 0;
+  padding: 0;
+  z-index: 8888;
+}
+#header {
+  margin-top: 3rem;
+}
+#lang-switch {
+  top: -1rem;
+    z-index: 9887;
+}
+#social-media-channels {
+  top: -1rem;
+  z-index: 9888;
+}
+#searchit {
+  top: -1rem;
+  right: 1em;
+}
+ header nav {
+  position: fixed;
+  width: 100%;
+  top: 0px !important;
+  left: 0px !important;
+  z-index: 9999;
+}
+
+.closed li {
+  display: none;
+} 
+
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.nav-collapse li {
+  width: 31.333%;
+  display: inline-block;
+  position: relative;
+  left: 0;
+}
+
+.nav-collapse li a {
+  font-size: 12px;
+  font-weight: 700;
+padding: 5px;
+border: none !important;
+background: hsl(0,50%,50%);
+border-bottom: 1px solid #000;
+color: #fff;
+display: block;
+width: 100%;
+text-transform: uppercase;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.disable-pointer-events {
+  pointer-events: none !important;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.nav-toggle {
+  color: transparent;
+  text-decoration: none;
+  background: url("../img/menu-alt-256.png") hsla(0,50%,50%,1) center;
+  background-size: 80% 80%;
+  background-repeat: no-repeat;
+  border: none;
+  display: block;
+  text-indent: -9999px;
+  height: 44px;
+  width: 44px;
+}
+.nav-toggle 
+}
+
+@media screen and (min-width: 40em) {
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
