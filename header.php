@@ -30,21 +30,21 @@
     }
     ?>
 
-    <div id="wrapper">  
-    <video autoplay loop poster="<?php echo get_template_directory_uri(); ?>/img/polina.png" id="bgvid">
-        <source src="<?php echo get_template_directory_uri(); ?>/img/animation.mp4" alt="backup festival weimar" type="video/mp4">
-      </video>
-        <header id="header" role="banner">
-           <section id="logo">
-              
-            <a href="<?php echo home_url(); ?>">  
-	           <img src="<?php echo get_template_directory_uri(); ?>/img/backup_2016_logo_web.png" alt="backup festival weimar" />
-           </a>
-
-       </section>
-       <nav id="menu" role="navigation">
+<div id="wrapper">  
+  <video autoplay loop poster="<?php echo get_template_directory_uri(); ?>/img/polina.png" id="bgvid">
+    <source src="<?php echo get_template_directory_uri(); ?>/img/animation.mp4" alt="backup festival weimar" type="video/mp4">
+  </video>
+      
+  <header id="header" role="banner">
+    <section id="logo">
+      <a href="<?php echo home_url(); ?>">  
+	     <img src="<?php echo get_template_directory_uri(); ?>/img/backup_2016_logo_web.png" alt="backup festival weimar" />
+      </a>
+    </section>
+      
+    <nav id="menu" role="navigation">
           <? wp_nav_menu(array('theme_location' => 'primary')); ?>
-      </nav>
+    </nav>
 
       <div id="lang-switch">
           <ul>
@@ -56,7 +56,7 @@
             </ul>
         </div>
 
-        <div id="social-media-channels">
+      <div id="social-media-channels">
            <ul>
              <li><a href="https://twitter.com/backup_festival" class="tw">Tw</a></li>
              <li><a href="https://www.facebook.com/backupfestival" class="fb">Fb</a></li>
@@ -64,18 +64,14 @@
          </ul>
      </div>
 
-     
-     <div id="searchit">
+      <div id="searchit">
         <a><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/search-icon.svg" width="20px" height="20px" /></a>
-    </div>
+      </div>     
+     
 
     <div class="searchbox">
         <div class="inner">
             <?php get_search_form(); ?>
         </div>
     </div>
-    
-    
-</header>
-
-<div id="container">
+  </header>

@@ -182,7 +182,7 @@ cite span {font-size: 1.6rem; color: #808080;}
 #header {
   position: relative;
   display: block;
-  height: 150px;
+  height: 120px;
   margin: 0 auto 8rem auto;
   padding: 0 5rem;
   overflow: visible;
@@ -260,38 +260,30 @@ cite span {font-size: 1.6rem; color: #808080;}
 
   /* NAVIGATION */
 @media (min-width: 640px) {
-  #menu {position: absolute; top: 44px; vertical-align: bottom; left: 40%;  line-height: 2.4rem; width: 50%;
-
-  }
-  #menu ul {margin: 0; padding:0; overflow: visible !important; position: relative;}
-  #menu li {list-style: none; margin: 0;padding: 0; display: block;border: none;  }
-  #menu li a{
-    text-transform: uppercase; 
+  #menu {position: relative; left: 30%; width: 70%; bottom:0;}
+  #menu ul ul  {display:none;}
+  #menu ul li:hover > ul {display:block;width:0.5em;}
+  #menu ul li a:hover {background-color: rgb(255,158,28); padding:0.55em;}
+  #menu ul li {margin: 0.55em; padding: 0.55em; display: inline-table; font-size:1.8rem;}
+  #menu li a {
     color: #fff; 
-    font-weight: 700; 
-    letter-spacing: 0px; 
-    text-decoration: none; 
-    border: none; 
-    padding: 3px 5px;
-    font-size: 1.5rem;
+    border-bottom: none; 
+    padding:0.55em; 
     -webkit-transition: background ease-in .2s;
     transition: background ease-in .2s;
   }
-  #header nav li a:hover, nav li.current_page_item a, nav.current-menu-item a {background: rgb(255,158,28);}
-
-  #header nav li:nth-child(1),nav li:nth-child(2),nav li:nth-child(3) {left: 0%; position: absolute; }
-  #header nav li:nth-child(4),nav li:nth-child(5),nav li:nth-child(6) {left: 80px; position: absolute; }
-  #header nav li:nth-child(7),nav li:nth-child(8),nav li:nth-child(9) {left: 220px; position: absolute;}
-  #header nav li:nth-child(10),nav li:nth-child(11),nav li:nth-child(12) {left: 340px; position: absolute;}
-  #header nav li:nth-child(13),nav li:nth-child(14),nav li:nth-child(15) {left: 430px; position: absolute;}
-
-  #header nav li:nth-child(1),#header nav li:nth-child(4),#header nav li:nth-child(7),#header nav li:nth-child(10), #header nav li:nth-child(13) {top: 0;}
-  #header nav li:nth-child(2), #header nav li:nth-child(5), #header nav li:nth-child(8), #header nav li:nth-child(11), #header nav li:nth-child(14) {top: 25px;}
-  #header nav li:nth-child(3), #header nav li:nth-child(6),#header nav li:nth-child(9), #header nav li:nth-child(12), #header nav li:nth-child(15) {top: 50px;}
-}
-
-
-
+  #menu ul ul {margin-top:0.55em;}
+  #menu ul ul a {font-size:1.5rem;}
+  #menu ul ul li {
+    background-color: rgba(107,110,115,0.5); 
+    margin:0;
+    padding-left:0.5em; 
+    padding-top:0.1em; 
+    padding-bottom:0.1em; 
+    width:7em;
+    border-top:1px solid rgb(255,158,28);
+  }
+  #menu ul ul li:hover {width:7em; background-color: rgb(255,158,28);}
 
 /* default style */
 
