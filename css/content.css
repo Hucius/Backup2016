@@ -236,6 +236,7 @@ column-span:all;
 .film-navigation .nav-next-prev .meta-nav {padding: 0 6px;}
 
 #index {
+  position:absolute;
   vertical-align: top;
   width: 100%;
   min-width: 320px;
