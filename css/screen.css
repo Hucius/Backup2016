@@ -160,6 +160,7 @@ cite span {font-size: 1.6rem; color: #808080;}
   padding-bottom: 240px;
 }
 
+/*background video*/
 #bgvid {
   position: fixed;
     top: 50%;
@@ -180,7 +181,7 @@ cite span {font-size: 1.6rem; color: #808080;}
 .none {display: none !important;}
 
 #header {
-  position: relative;
+  position:relative;
   display: block;
   height: 120px;
   margin: 0 auto 8rem auto;
@@ -284,7 +285,7 @@ cite span {font-size: 1.6rem; color: #808080;}
     border-top:1px solid rgb(255,158,28);
   }
   #menu ul ul li:hover {width:7em; background-color: rgb(255,158,28);}
-
+  #menu ul ul li a:hover {background-color: rgba(255,158,28,0);}
 /* default style */
 
 #menu-hauptmenu { 
@@ -446,7 +447,6 @@ width: 100%; min-height: 500px; height:100%; position:relative;
 #leftb {width: 10px; height: 100%; top: 0; left: 0;}
 #rightb {width: 10px; height: 100%; top: 0; right: 0;}
 */
-
 .clearfix:after {
     visibility: hidden;
     display: block;
