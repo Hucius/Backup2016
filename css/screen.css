@@ -189,7 +189,14 @@ cite span {font-size: 1.6rem; color: #808080;}
   overflow: visible;
   background-color: rgba(107,110,115,0.5);
 }
-
+#logo {
+  position:relative;
+  width: 230px;
+  -webkit-transition: left .3s;
+  transition: left .3s;
+  top:20px;
+  padding-left: 80px;
+}
 #logo img {
   width: 100%;
   height: auto;
@@ -249,17 +256,9 @@ cite span {font-size: 1.6rem; color: #808080;}
   display: none;
 } 
 
-  /* NAVIGATION */
-   /* big screen */
+/* NAVIGATION */
+  /* big screen */
 @media (min-width: 992px) {
-  #logo {
-  position:relative;
-  width: 230px;
-  -webkit-transition: left .3s;
-  transition: left .3s;
-  top:28px;
-  padding-left: 80px;
-  }
   #menu {position: relative; right:-30%;z-index: 2}
   #menu ul ul  {display:none;}
   #menu ul li:hover > ul {display:block;width:0.5em;}
@@ -288,20 +287,49 @@ cite span {font-size: 1.6rem; color: #808080;}
   .nav-toggle {display:none;}
 }
 
-/* default style */
-
-#menu-hauptmenu { 
--webkit-transform: translate(0,0px);
-transform: translate(0,0px);
--webkit-transition: all .3s ease-in .15s;
-transition: all .3s ease-in .15s;
-opacity: 1;
+/* middle screen */
+@media screen and (min-width: 768px) and (max-width:992px) {
+  #logo {
+    left: 50%;
+    margin-left: -150px;
+    -webkit-animation: logoFadeInOut 1s 1;
+    -moz-animation: logoFadeInOut 1s 1;
+      -ms-animation: logoFadeInOut 1s 1;
+        -o-animation: logoFadeInOut 1s 1;
+  animation: logoFadeInOut 1s 1;
+  animation-fill-mode: both;
+   }
+  #menu {margin-left:5%; z-index: 2}
+  #menu ul ul  {display:none;}
+  #menu ul li:hover > ul {display:block;width:0.5em;}
+  #menu ul li a:hover {background-color: rgb(255,158,28); padding:0.55em;}
+  #menu ul li {margin: 0.55em; padding: 0.55em; display: inline-table; font-size:1.8rem;}
+  #menu li a {
+    color: #fff; 
+    border-bottom: none; 
+    padding:0.55em; 
+    -webkit-transition: background ease-in .2s;
+    transition: background ease-in .2s;
+  }
+  #menu ul ul {margin-top:0.55em;}
+  #menu ul ul a {font-size:1.5rem;}
+  #menu ul ul li {
+    background-color: rgba(107,110,115,0.5); 
+    margin:0;
+    padding-left:0.5em; 
+    padding-top:0.1em; 
+    padding-bottom:0.1em; 
+    width:8em;
+    border-top:1px solid rgb(255,158,28);
+  }
+  #menu ul ul li:hover {width:8em; background-color: rgb(255,158,28);}
+  #menu ul ul li a:hover {background-color: rgba(255,158,28,0);}
+  .nav-toggle {display:none;}
 }
 
 /* small screen */
 @media screen and (max-width: 768px) {
-
-#logo {
+ #logo {
   left: 50%;
   margin-left: -150px;
   -webkit-animation: logoFadeInOut 1s 1;
@@ -310,9 +338,8 @@ opacity: 1;
         -o-animation: logoFadeInOut 1s 1;
   animation: logoFadeInOut 1s 1;
   animation-fill-mode: both;
-}
- 
-
+ } 
+ .nav-toggle {display:none;}
 }
   
   #footer {
