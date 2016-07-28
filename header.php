@@ -35,16 +35,17 @@
   </video>
       
   <header id="header" role="banner">
-    <section id="logo">
+    <div id="logo">
       <a href="<?php echo home_url(); ?>">  
 	     <img src="<?php echo get_template_directory_uri(); ?>/img/backup_2016_logo_web.png" alt="backup festival weimar" />
       </a>
-    </section>
+    </div>
       
     <nav id="menu" role="navigation">
           <? wp_nav_menu(array('theme_location' => 'primary')); ?>
     </nav>
 
+    <div id="toolbox">
       <div id="lang-switch">
           <ul>
               <?php 
@@ -61,16 +62,16 @@
              <li><a href="https://www.facebook.com/backupfestival" class="fb">Fb</a></li>
              <li><a href="http://www.youtube.com/user/backupfestival" class="yt">Yt</a></li>
          </ul>
-     </div>
+      </div>
 
       <div id="searchit">
-        <a><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/search-icon.svg" width="20px" height="20px" /></a>
-      </div>     
-     
+        <a><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/search-icon.svg" width="20px" height="20px" /></a>   
+      </div>
+    </div>
 
-    <div class="searchbox">
+      <div class="searchbox">
         <div class="inner">
             <?php get_search_form(); ?>
         </div>
-    </div>
+      </div>
   </header>
