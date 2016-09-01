@@ -134,7 +134,7 @@ h1 {
 
 h2 {font-size: 3.6rem; line-height: 1.2; margin: 1rem 0 1rem 0}
 
-h3 {font-size: 2.4rem; line-height: 1.2; margin: 1rem 0 1rem 0}
+h3 {font-size: 1.8rem; line-height: 1.2; margin: 1rem 0 1rem 0}
 
 cite {font-size: 2.4rem; color: #fff; line-height: 1.1; text-align: center; display:block; width: 80%; margin: 2rem auto;}
 cite span {font-size: 1.6rem; color: #808080;}
@@ -199,7 +199,7 @@ cite span {font-size: 1.6rem; color: #808080;}
 }
 #logo img {
   width: auto;
-  height: 60px;
+  height: 50px;
 }
 #logo a {border: none !important;}
 
@@ -291,20 +291,19 @@ cite span {font-size: 1.6rem; color: #808080;}
 /* middle screen */
 @media screen and (min-width: 768px) and (max-width:992px) {
   #logo {
-    left: 50%;
-    margin-left: -150px;
+    padding-left: 40%;
     -webkit-animation: logoFadeInOut 1s 1;
     -moz-animation: logoFadeInOut 1s 1;
       -ms-animation: logoFadeInOut 1s 1;
         -o-animation: logoFadeInOut 1s 1;
-  animation: logoFadeInOut 1s 1;
-  animation-fill-mode: both;
+    animation: logoFadeInOut 1s 1;
+    animation-fill-mode: both;
    }
-  #menu {margin-left:5%; z-index: 2}
+  #menu {position: relative; margin-left: 10%; z-index: 2}
   #menu ul ul  {display:none;}
   #menu ul li:hover > ul {display:block;width:0.5em;}
   #menu ul li a:hover {background-color: rgb(255,158,28); padding:0.55em;}
-  #menu ul li {margin: 0.55em; padding: 0.55em; display: inline-table; font-size:1.8rem;}
+  #menu ul li {margin: 1.4em; padding: 0.55em; display: inline-table; font-size:1.5rem;}
   #menu li a {
     color: #fff; 
     border-bottom: none; 
@@ -313,7 +312,7 @@ cite span {font-size: 1.6rem; color: #808080;}
     transition: background ease-in .2s;
   }
   #menu ul ul {margin-top:0.55em;}
-  #menu ul ul a {font-size:1.5rem;}
+  #menu ul ul a {font-size:1.3rem;}
   #menu ul ul li {
     background-color: rgba(107,110,115,0.5); 
     margin:0;
@@ -325,17 +324,15 @@ cite span {font-size: 1.6rem; color: #808080;}
   }
   #menu ul ul li:hover {width:8em; background-color: rgb(255,158,28);}
   #menu ul ul li a:hover {background-color: rgba(255,158,28,0);}
+  #toolbox{right: 5%;}
   .nav-toggle {display:none;}
 }
 
 /* small screen */
 @media screen and (max-width: 768px) {
  #logo {
-  left: 50%;
-  top: 4rem;
-  width: 90%;
-  height: 90%;
-  margin-left: -150px;
+  left: 33%;
+  top: 25px;
   -webkit-animation: logoFadeInOut 1s 1;
     -moz-animation: logoFadeInOut 1s 1;
       -ms-animation: logoFadeInOut 1s 1;
@@ -343,11 +340,9 @@ cite span {font-size: 1.6rem; color: #808080;}
   animation: logoFadeInOut 1s 1;
   animation-fill-mode: both;
  } 
+ #toolbox{left: 5%;}
   .nav-toggle {display:none;}
  }
- #lang-switch {right: 145px;}
- #social-media-channels {right: 45px;}
- #searchit {right: 15px;}
   
   #footer {
   border-top: 3px solid hsla(0,0%,5%,.5);

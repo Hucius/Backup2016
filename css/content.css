@@ -418,7 +418,7 @@ column-span:all;
 #overview .post .entry-title {}
 #overview .post .entry-content {}
 #overview .subpages {  margin: 0 -1%;}
-#overview .subpages .entry { width: 31%; margin: 0rem 1% 2rem 1%; display:inline-block; background: hsla(0,0%,0%,.7); vertical-align: top; min-height: 200px;}
+#overview .subpages .entry { width: 30%; margin: 0rem 1% 2rem 1%; display:inline-block; background: hsla(0,0%,0%,.7); vertical-align: top; min-height: 200px;}
 #overview .subpages .entry-content { width: 100%;}
 #overview .subpages .entry h3 {width: 100%; display: block; margin-top: 0; padding: 2rem 2rem 0 2rem; word-wrap: word-break;}
 #overview .subpages .entry a {color: #fff; text-decoration: none;}
